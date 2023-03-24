@@ -53,7 +53,10 @@
 
           {% endif %}
         {% endfor %}
-        {% include 'blog/snippets/pagination.html' %}
+
+        {% if posts %}
+          {% include 'blog/snippets/pagination.html' %}
+        {% endif %}
       </div>
     </div>
     <div class="col-3">{% include "blog/snippets/sidebar.html" %}</div>
